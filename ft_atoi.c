@@ -21,7 +21,8 @@ static int	ft_str_is_numeric(char *str)
 
 static int	ft_str_is_space(char *str)
 {
-	if (*str != 32)
+	if (*str != ' ' || *str != '\t' || *str != '\n' || *str != '\r'
+		|| *str != '\f' || *str != '\v')
 	{
 		return (0);
 	}
