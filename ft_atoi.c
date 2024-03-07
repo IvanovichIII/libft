@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-static int	ft_str_is_numeric(char *str)
+static int	ft_str_is_numeric(const char *str)
 {
 	if (!(*str >= 48 && *str <= 57))
 	{
@@ -19,7 +19,7 @@ static int	ft_str_is_numeric(char *str)
 	return (1);
 }
 
-static int	ft_str_is_space(char *str)
+static int	ft_str_is_space(const char *str)
 {
 	if (*str != ' ' || *str != '\t' || *str != '\n' || *str != '\r'
 		|| *str != '\f' || *str != '\v')
@@ -29,7 +29,7 @@ static int	ft_str_is_space(char *str)
 	return (1);
 }
 
-int	ft_atoi(char *str)
+int	ft_atoi(const char *str)
 {
 	int	result;
 	int	sign;
