@@ -1,6 +1,6 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -Werror
-TARGET = libft
+FLAGS = -Wall -Wextra -Werror
+NOMBRE = libft
 
 SOURCE = ft_*.c
 
