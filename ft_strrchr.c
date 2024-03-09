@@ -1,36 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: igomez-s <igomez-s@student.42.com>         +#+  +:+       +#+        */
+/*   By: ivan <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/07 09:31:28 by igomez-s          #+#    #+#             */
-/*   Updated: 2024/03/07 10:00:12 by igomez-s         ###   ########.fr       */
+/*   Created: 2024/03/09 22:49:07 by ivan              #+#    #+#             */
+/*   Updated: 2024/03/09 22:53:39 by ivan             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 
-int	ft_strlen(char *str)
-{
-	int	i;
-
-	i = 0;
-	while (*str)
-	{
-		str++;
-		i++;
-	}
-	return (i);
-}
-
-char	*ft_strchr(char *str, int c)
+char	*ft_strrchr(char *str, int c)
 {
 	while (*str)
 	{
 		str++;
 	}
+	str--;
 	while (*str)
 	{
 		if (*str == c)

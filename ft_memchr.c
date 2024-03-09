@@ -1,28 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ivan <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/05 18:46:00 by ivan              #+#    #+#             */
-/*   Updated: 2024/03/09 22:54:12 by ivan             ###   ########.fr       */
+/*   Created: 2024/03/10 00:18:03 by ivan              #+#    #+#             */
+/*   Updated: 2024/03/10 00:19:43 by ivan             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <unistd.h>
-
-#include "libft.h"
-
-int	main(void)
+void	*ft_memchr(const char *s1, int c, size_t n)
 {
-	char	*str = "hola mundo azul";
-	char	*str2 = ft_strchr(str, 'a');
-	while (*str2)
+	while ((*s1 != '\0' || *s2 != '\0') && n-- > 0)
 	{
-		write(1, str2, 1);
-		str2++;
+		if (*s2 == '\0')
+			return (*s1);
+		if (*s1 > *s2)
+			return (*s1 - *s2);
+		else if (*s1 < *s2)
+			return (*s1 - *s2);
+		s1++;
+		s2++;
 	}
-//	printf("%s", str);
+	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: ivan <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 19:04:43 by ivan              #+#    #+#             */
-/*   Updated: 2024/03/07 09:50:13 by igomez-s         ###   ########.fr       */
+/*   Updated: 2024/03/09 23:13:23 by ivan             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,4 +22,6 @@ char	*ft_memcpy(char *dest, char *src, int n);
 char	*ft_memmove(char *dest, char *src, int n);
 char	*ft_toupper(char *str);
 char	*ft_strchr(char *str, int c);
+char	*ft_strrchr(char *str, int c);
+char	*ft_strncmp(const char *s1, const char *s2, unsigned int c);
 int		ft_atoi(char *str);
