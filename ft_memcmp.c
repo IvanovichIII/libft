@@ -1,25 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ivan <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/10 00:18:03 by ivan              #+#    #+#             */
-/*   Updated: 2024/03/10 00:28:12 by ivan             ###   ########.fr       */
+/*   Created: 2024/03/10 00:33:30 by ivan              #+#    #+#             */
+/*   Updated: 2024/03/10 00:42:23 by ivan             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memchr(const char *str, int c, size_t n)
+int	ft_memcmp(const void *str1, const void *str2, size_t n)
 {
-	while (n > 0)
+	while (n-- > 0)
 	{
-		if (*str == (unsigned char)c)
-		{
-			return ((void *)str);
-		}
-		n--;
-		str++;
+		if (*str1 != *str2)
+			return (*str1 - *str2);
+		str1++;
+		str2++;
 	}
-	return (NULL);
+	return (0);
 }
