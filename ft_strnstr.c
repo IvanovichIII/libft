@@ -6,14 +6,16 @@
 /*   By: ivan <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/10 00:58:56 by ivan              #+#    #+#             */
-/*   Updated: 2024/03/10 01:00:13 by ivan             ###   ########.fr       */
+/*   Updated: 2024/03/11 11:44:59 by igomez-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stddef.h>
+
 char	*ft_strnstr(const char *s1, const char *s2, size_t n)
 {
-	char	*or_s1;
-	char	*or_s2;
+	const char	*or_s1;
+	const char	*or_s2;
 
 	or_s1 = s1;
 	or_s2 = s2;
@@ -27,7 +29,7 @@ char	*ft_strnstr(const char *s1, const char *s2, size_t n)
 			s2++;
 		}
 		if (*s2 == '\0')
-			return (or_s1);
+			return ((char *)or_s1);
 		s1++;
 		n--;
 	}
