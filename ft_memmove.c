@@ -1,28 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ivan <marvin@42.fr>                        +#+  +:+       +#+        */
+/*   By: igomez-s <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/05 18:46:00 by ivan              #+#    #+#             */
-/*   Updated: 2024/03/11 11:45:40 by igomez-s         ###   ########.fr       */
+/*   Created: 2024/03/12 18:53:11 by igomez-s          #+#    #+#             */
+/*   Updated: 2024/03/12 19:04:11 by igomez-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <unistd.h>
-
 #include "libft.h"
 
-int	main(void)
+void	*memmove(void *dest, const void *src, size_t n)
 {
-	char	*str = "hola mundo azul";
-	char	*str2 = ft_strnstr(str, "mun", 15);
-	while (*str2)
-	{
-		write(1, str2, 1);
-		str2++;
-	}
-//	printf("%s", str);
+
 }
