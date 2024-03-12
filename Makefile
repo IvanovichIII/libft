@@ -2,7 +2,7 @@ CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 NAME = libft.a
 
-SOURCE = ft_isalpha.c \
+SRC = ft_isalpha.c \
 		 ft_isdigit.c \
 		 ft_isalnum.c \
 		 ft_isascii.c \
@@ -28,19 +28,18 @@ SOURCE = ft_isalpha.c \
 
 OBJ = $(SRC:.c=.o)
 
-$(NAME): $(OBJ)
-	ar rcs $(NAME) $(OBJ)
-
 all: $(NAME)
 
-%.o: %.c
-    $(CC) $(CFLAGS) -c $< -o $@
+$(NAME): $(OBJ)
+	$(CC) $(CFLAGS) -o $(NAME) $(OBJ)
 
 clean:
-	rm -rf *.o
+	rm -rf $(OBJ)
 
 fclean:
-	rm -rf $(NAME) *.o
+	rm -rf $(NAME) $(OBJ) 
 
 re:
-	fclean all
+	clean all
+
+.PHONY: all clean fclean re
