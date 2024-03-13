@@ -23,6 +23,7 @@ char	*ft_strrchr(const char *str, int c)
 	{
 		if (*str == c)
 		{
+			str--;
 			return ((char *)str);
 		}
 		str--;
