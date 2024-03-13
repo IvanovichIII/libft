@@ -25,7 +25,7 @@ char	*ft_strdup(const char *str)
 	{
 		while (*str)
 			*ptr++ = *str++;
-		*ptr = 0;
+		*ptr = '\0';
 	}
 	return (or_ptr);
 }
