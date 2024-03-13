@@ -14,11 +14,23 @@
 
 int	ft_atoi(const char *str)
 {
-	int res = 0;
+	int	res;
+	int	sign;
+
+	res = 0;
+	sign = 1;
+	if (*str == '-' || *str == '+')
+	{
+		if (*str == '-')
+		{
+			sign = -sign;
+		}
+		str++;
+	}
 	while (*str)
 	{
 		res = res * 10 + *str - '0';
 		str++;
 	}
-	return res;
+	return (res * sign);
 }
