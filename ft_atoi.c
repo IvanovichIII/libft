@@ -14,25 +14,29 @@
 
 int	ft_atoi(const char *str)
 {
-	int	res;
-	int	sign;
-
-	res = 0;
-	sign = 1;
-	while (*str == ' ' || *str == '\t' || *str == '\n'
-		|| *str == '\r' || *str == '\f' || *str++ == '\v');
-	if (*str == '-' || *str == '+')
+	int total;
+	int is_negative;
+	
+	total = 0;
+	is_negative = 0;
+	while (*str == ' ' || *str == '\n' || *str == '\r' || *str == '\f'
+		|| *str == '\t' || *str == '\v' || *str == '+')
+		str++;
+	if (*str == '-')
 	{
-		if (*str == '-')
-		{
-			sign = -sign;
-		}
+		is_negative = 1;
 		str++;
 	}
-	while (*str)
+	while ((*str == '-') || (*str == '+'))
+		str++;
+	while (*str >= '0' && *str <= '9')
 	{
-		res = res * 10 + *str - '0';
+		total *= 10;
+		total += (*str - 48);
 		str++;
 	}
-	return (res * sign);
+	if (is_negative)
+		return (-total);
+	else
+		return (total);
 }
