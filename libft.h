@@ -6,7 +6,7 @@
 /*   By: ivan <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 19:04:43 by ivan              #+#    #+#             */
-/*   Updated: 2024/03/13 19:41:20 by ivan             ###   ########.fr       */
+/*   Updated: 2024/03/14 00:24:58 by ivan             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,9 +29,9 @@ int		ft_toupper(int str);
 int		ft_tolower(int str);
 char	*ft_strchr(const char *str, int c);
 char	*ft_strrchr(const char *str, int c);
-int    ft_strncmp(const char *s1, const char *s2, size_t c);
+int		ft_strncmp(const char *s1, const char *s2, size_t c);
 void	*ft_memchr(const char *str, int c, size_t n);
-int  	ft_memcmp(const void *str1, const void *str2, size_t n);
+int		ft_memcmp(const void *str1, const void *str2, size_t n);
 char	*ft_strnstr(const char *s1, const char *s2, size_t n);
 void	*ft_calloc(size_t number, size_t size);
 char	*ft_strdup(const char *string);
