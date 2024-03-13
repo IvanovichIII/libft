@@ -42,7 +42,6 @@ clean:
 fclean:
 	rm -rf $(NAME) $(OBJ) 
 
-re:
-	clean all
+re: clean all
 
 .PHONY: all clean fclean re
