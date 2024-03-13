@@ -10,16 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memset(char *str, char c, int n)
-{
-	char	*or_str;
+#include "libft.h"
 
-	or_str = str;
-	while (*str && n > 0)
+void	*ft_memset(void *str, int c, size_t n)
+{
+	while (n > 0)
 	{
-		*str = c;
-		str++;
-		n--;
+		*str++ = (unsigned char)c;
+		i++;
 	}
-	return (or_str);
+	return (str);
 }
