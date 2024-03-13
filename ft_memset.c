@@ -22,6 +22,5 @@ void	*ft_memset(void *str, int c, size_t n)
 		*s++ = (unsigned char)c;
 		n--;
 	}
-	s = str;
 	return (str);
 }
