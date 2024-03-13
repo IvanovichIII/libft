@@ -14,7 +14,7 @@ int	ft_isalnum(char *str)
 {
 	while (*str)
 	{
-		if (!((*str >= 'A' && *str <= 'Z') || (*str >= 'a' && *str <= 'z')
+		if (!(((*str >= 'A' && *str <= 'Z') || (*str >= 'a' && *str <= 'z'))
 				|| (*str >= '0' && *str <= '9')))
 		{
 			return (0);
