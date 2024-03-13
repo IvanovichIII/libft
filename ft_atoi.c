@@ -19,10 +19,14 @@ static int	ft_str_is_numeric(const char *str)
 	return (1);
 }
 
-static int	ft_str_is_space(char c)
+static int	ft_str_is_space(const char *str)
 {
-	return (c != ' ' || c != '\t' || c != '\n' || c != '\r'
-		|| c != '\f' || c != '\v');
+	if (*str != ' ' || *str != '\t' || *str != '\n' || *str != '\r'
+		|| *str != '\f' || *str != '\v')
+	{
+		return (0);
+	}
+	return (1);
 }
 
 int	ft_atoi(const char *str)
