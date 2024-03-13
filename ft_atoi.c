@@ -14,8 +14,8 @@
 
 int	ft_atoi(const char *str)
 {
-	int total;
-	int sign;
+	int	total;
+	int	sign;
 
 	total = 0;
 	sign = 0;
@@ -27,7 +27,7 @@ int	ft_atoi(const char *str)
 			sign = 1;
 	if (*str < '0' || *str > '9')
 	{
-		return 0;
+		return (0);
 	}
 	while (*str >= '0' && *str <= '9')
 	{
