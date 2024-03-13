@@ -19,6 +19,8 @@ char	*ft_strnstr(const char *s1, const char *s2, size_t n)
 
 	or_s1 = s1;
 	or_s2 = s2;
+	if (*s2 == '\0')
+		return ((char *)s1);
 	while (*s1 != '\0' && n > 0)
 	{
 		or_s1 = s1;
