@@ -27,7 +27,7 @@ int	ft_atoi(const char *str)
 		if (*str++ == '-')
 			sign = 1;
 	}
-	if (ft_isdigit(*str))
+	if (!ft_isdigit(*str))
 		return (0);
 	while (*str >= '0' && *str <= '9')
 	{
