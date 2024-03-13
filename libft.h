@@ -32,4 +32,4 @@ int	  ft_strncmp(const char *s1, const char *s2, size_t c);
 char	*ft_strnstr(const char *s1, const char *s2, size_t n);
 void	*ft_calloc(size_t number, size_t size);
 char	*ft_strdup(const char *string);
-int		ft_atoi(char *str);
+int		ft_atoi(const char *str);
