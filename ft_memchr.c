@@ -10,6 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stddef.h>
+
 void	*ft_memchr(const char *str, int c, size_t n)
 {
 	while (n > 0)
