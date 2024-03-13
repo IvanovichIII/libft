@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memcpy(char *dest, const char *src, size_t n)
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	while (*src && n > 0)
 	{
