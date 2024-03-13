@@ -10,16 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_toupper(char *str)
+int	ft_toupper(int str)
 {
-	char	*or_str;
-
-	or_str = str;
-	while (*str)
-	{
-		if (*str >= 'a' && *str <= 'z')
-			*str -= 32;
-		str++;
-	}
-	return (or_str);
+	if (str >= 'a' && str <= 'z')
+		str -= 32;
+	return (str);
 }
