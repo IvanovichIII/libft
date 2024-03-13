@@ -21,7 +21,7 @@ int		ft_strlen(char *str);
 char	*ft_memset(char *str, char c, int n);
 char	*ft_bzero(char *str, int n);
 char	*ft_memcpy(char *dest, char *src, int n);
-void	*ft_memmove(char *dest, char *src, int n);
+void	*ft_memmove(char *dest, char *src, size_t n);
 char	*ft_toupper(char *str);
 char	*ft_strchr(char *str, int c);
 char	*ft_strrchr(char *str, int c);
