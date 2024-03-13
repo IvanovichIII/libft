@@ -25,6 +25,10 @@ int	ft_atoi(const char *str)
 	if (*str == '-' || *str == '+')
 		if (*str++ == '-')
 			sign = 1;
+	if (*str < '0' || *str > '9')
+	{
+		return 0; // No es un número válido, devolver 0
+	}
 	while (*str >= '0' && *str <= '9')
 	{
 		total *= 10;
