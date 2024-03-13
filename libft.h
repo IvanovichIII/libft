@@ -36,4 +36,4 @@ char	*ft_strnstr(const char *s1, const char *s2, size_t n);
 void	*ft_calloc(size_t number, size_t size);
 char	*ft_strdup(const char *string);
 int		ft_atoi(const char *str);
-char	*ft_substr(const char *s, unsigned int start, size_t len)
+char	*ft_substr(const char *s, unsigned int start, size_t len);
