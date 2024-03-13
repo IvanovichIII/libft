@@ -22,13 +22,9 @@ int	ft_atoi(const char *str)
 	while (*str == ' ' || *str == '\n' || *str == '\r' || *str == '\f'
 		|| *str == '\t' || *str == '\v' || *str == '+')
 		str++;
-	if (*str == '-')
-	{
-		is_negative = 1;
-		str++;
-	}
-	while ((*str == '-') || (*str == '+'))
-		str++;
+	if (*str == '-' || *str == '+')
+		if (*str** == '-')
+			sign = -1;
 	while (*str >= '0' && *str <= '9')
 	{
 		total *= 10;
