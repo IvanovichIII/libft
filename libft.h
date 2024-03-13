@@ -12,7 +12,7 @@
 
 #include <stddef.h>
 
-int		ft_isalpha(char *str);
+int  ft_isalpha(int str);
 int		ft_isdigit(char *str);
 int		ft_isalnum(char *str);
 int		ft_isascii(char *str);
