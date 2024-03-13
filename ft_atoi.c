@@ -16,7 +16,7 @@ int	ft_atoi(const char *str)
 {
 	int total;
 	int is_negative;
-	
+
 	total = 0;
 	is_negative = 0;
 	while (*str == ' ' || *str == '\n' || *str == '\r' || *str == '\f'
