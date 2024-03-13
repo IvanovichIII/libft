@@ -30,7 +30,7 @@ OBJ = $(SRC:.c=.o)
 
 all: $(NAME)
 
-$(NAME): $(SOURCE)
+$(NAME): $(SRC)
 	$(CC) $(CFLAGS) -o $@ $^
 
 %.o: %.c
