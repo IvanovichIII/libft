@@ -26,9 +26,7 @@ int	ft_atoi(const char *str)
 		if (*str++ == '-')
 			sign = 1;
 	if (ft_isdigit(*str) == 0)
-	{
 		return (0);
-	}
 	while (*str >= '0' && *str <= '9')
 	{
 		total *= 10;
