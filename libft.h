@@ -6,14 +6,14 @@
 /*   By: ivan <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 19:04:43 by ivan              #+#    #+#             */
-/*   Updated: 2024/03/13 19:02:48 by ivan             ###   ########.fr       */
+/*   Updated: 2024/03/13 19:05:47 by ivan             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 
 int		ft_isalpha(int str);
-int	  ft_isalnum(char str);
+int		ft_isalnum(char str);
 int		ft_isalnum(char *str);
 int		ft_isascii(char *str);
 int		ft_isprint(char *str);
