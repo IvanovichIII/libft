@@ -25,7 +25,7 @@ void	*ft_memmove(char *dest, char *src, int n);
 char	*ft_toupper(char *str);
 char	*ft_strchr(char *str, int c);
 char	*ft_strrchr(char *str, int c);
-char	*ft_strncmp(const char *s1, const char *s2, unsigned int c);
+char	*ft_strncmp(const char *s1, const char *s2, size_t c);
 char	*ft_strnstr(char *s1, char *s2, int c);
 void	*ft_calloc(size_t number, size_t size);
 int		ft_atoi(char *str);
