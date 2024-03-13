@@ -12,7 +12,7 @@
 
 int	ft_isalpha(int str)
 {
-	if (!((*str >= 'A' && *str <= 'Z') || (*str >= 'a' && *str <= 'z')))
+	if (!((str >= 'A' && str <= 'Z') || (str >= 'a' && str <= 'z')))
 		return (0);
 	else
 		return (1);
