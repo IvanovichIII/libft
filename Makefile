@@ -28,13 +28,13 @@ SRC = ft_isalpha.c \
 
 OBJ = $(SRC:.c=.o)
 
+$(NAME): $(OBJ)
+	ar rcs $(NAME) $(OBJ)
+
 all: $(NAME)
 
-$(NAME): $(SRC)
-	$(CC) $(CFLAGS) -o $@ $^
-
-%.o: %.c
-	$(CC) $(CFLAGS) -c -o $@ $<
+%.o:%.c
+	$(CC) $(CFLAGS) -o $@ -c $<
 
 clean:
 	rm -rf $(OBJ)
