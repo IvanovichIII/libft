@@ -10,16 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_tolower(char *str)
+int	*ft_tolower(int str)
 {
-	char	*or_str;
-
-	or_str = str;
-	while (*str)
-	{
-		if (*str >= 'A' && *str <= 'Z')
-			*str += 32;
-		str++;
-	}
-	return (or_str);
+	if (str >= 'A' && str <= 'Z')
+		str += 32;
+	return (str);
 }
