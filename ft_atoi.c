@@ -10,14 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-static int	ft_str_is_numeric(const char *str)
-{
-	if (!(*str >= 48 && *str <= 57))
-	{
-		return (0);
-	}
-	return (1);
-}
+#include "libft.h"
 
 static int	ft_str_is_space(const char *str)
 {
@@ -44,7 +37,7 @@ int	ft_atoi(const char *str)
 			sign = -sign;
 		str++;
 	}
-	while (ft_str_is_numeric(str) == 1)
+	while (ft_isdigit(*str) == 1)
 	{
 		result = result * 10 + (*str - '0');
 		str++;
