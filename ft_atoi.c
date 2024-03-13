@@ -15,10 +15,10 @@
 int	ft_atoi(const char *str)
 {
 	int total;
-	int is_negative;
+	int sign;
 
 	total = 0;
-	is_negative = 0;
+	sign = 0;
 	while (*str == ' ' || *str == '\n' || *str == '\r' || *str == '\f'
 		|| *str == '\t' || *str == '\v' || *str == '+')
 		str++;
@@ -31,7 +31,7 @@ int	ft_atoi(const char *str)
 		total += (*str - 48);
 		str++;
 	}
-	if (is_negative)
+	if (sign)
 		return (-total);
 	else
 		return (total);
