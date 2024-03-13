@@ -24,24 +24,11 @@ static int	ft_str_is_space(const char *str)
 
 int	ft_atoi(const char *str)
 {
-	int	result;
-	int	sign;
-
-	result = 0;
-	sign = 1;
-	while (ft_str_is_space(str) == 1)
-		str++;
-	while (*str == '-' || *str == '+')
+	int res = 0;
+	while (*str)
 	{
-		if (*str == '-')
-			sign = -sign;
+		res = res * 10 + *str - '0';
 		str++;
 	}
-	while (ft_isdigit(*str) == 1)
-	{
-		result = result * 10 + (*str - '0');
-		str++;
-	}
-	result *= sign;
-	return (result);
+	return res;
 }
