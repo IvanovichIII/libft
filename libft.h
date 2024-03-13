@@ -15,8 +15,8 @@
 int		ft_isalpha(int str);
 int		ft_isalnum(int str);
 int		ft_isdigit(int str);
-int		ft_isascii(char *str);
-int		ft_isprint(char *str);
+int		ft_isascii(int str);
+int		ft_isprint(int str);
 int		ft_strlen(char *str);
 char	*ft_memset(char *str, char c, int n);
 char	*ft_bzero(char *str, int n);
