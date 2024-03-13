@@ -28,7 +28,7 @@ int		ft_toupper(int str);
 int		ft_tolower(int str);
 char	*ft_strchr(const char *str, int c);
 char	*ft_strrchr(const char *str, int c);
-char	*ft_strncmp(const char *s1, const char *s2, size_t c);
+int	  ft_strncmp(const char *s1, const char *s2, size_t c);
 char	*ft_strnstr(char *s1, char *s2, int c);
 void	*ft_calloc(size_t number, size_t size);
 char	*ft_strdup(const char *string);
