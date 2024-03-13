@@ -10,6 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stddef.h>
+
 int		ft_isalpha(char *str);
 int		ft_isdigit(char *str);
 int		ft_isalnum(char *str);
