@@ -6,7 +6,7 @@
 /*   By: ivan <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 19:04:43 by ivan              #+#    #+#             */
-/*   Updated: 2024/03/14 00:40:55 by ivan             ###   ########.fr       */
+/*   Updated: 2024/03/14 01:20:23 by ivan             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,4 +37,4 @@ void	*ft_calloc(size_t number, size_t size);
 char	*ft_strdup(const char *string);
 int		ft_atoi(const char *str);
 char	*ft_substr(const char *s, unsigned int start, size_t len);
-char *ft_strjoin(const char *s1, const char *s2);
+char	*ft_strjoin(const char *s1, const char *s2);
