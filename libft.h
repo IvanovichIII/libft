@@ -6,7 +6,7 @@
 /*   By: ivan <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 19:04:43 by ivan              #+#    #+#             */
-/*   Updated: 2024/03/14 17:02:11 by igomez-s         ###   ########.fr       */
+/*   Updated: 2024/03/14 17:07:33 by igomez-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,10 +40,7 @@ int		ft_atoi(const char *str);
 char	*ft_substr(const char *s, unsigned int start, size_t len);
 char	*ft_strjoin(const char *s1, const char *s2);
 char	*ft_strtrim(char const *s1, char const *set);
-<<<<<<< HEAD
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int nb, int fd);
-=======
->>>>>>> 1ee65335d5d53ebc8cfcf25cfebe0aec5b502bb5
