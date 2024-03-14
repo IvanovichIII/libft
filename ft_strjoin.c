@@ -22,10 +22,10 @@ char	*ft_strjoin(const char *s1, const char *s2)
 	s1len = ft_strlen(s1);
 	s2len = ft_strlen(s2);
 	if (!s1 || !s2)
-		return (NULL)
+		return (NULL);
 	ptr = (char *)malloc((s1len + s2len + 1) * sizeof(char));
 	if (!ptr)
-		return (NULL)
+		return (NULL);
 	or_ptr = ptr;
 	ft_strlcpy(ptr, s1, s1len);
 	ft_strlcpy(ptr + s1len, s2, s2len);
