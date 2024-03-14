@@ -27,11 +27,15 @@ SRC = ft_isalpha.c \
 		 ft_strdup.c \
 		 ft_substr.c \
 		 ft_strjoin.c \
+<<<<<<< HEAD
 		 ft_strtrim.c \
 		 ft_putchar_fd.c \
 		 ft_putstr_fd.c \
 		 ft_putendl_fd.c \
 		 ft_putnbr_fd.c \
+=======
+		 ft_strtrim.c 
+>>>>>>> 1ee65335d5d53ebc8cfcf25cfebe0aec5b502bb5
 
 OBJ = $(SRC:.c=.o)
 
