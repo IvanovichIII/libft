@@ -6,7 +6,7 @@
 /*   By: ivan <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 01:31:14 by ivan              #+#    #+#             */
-/*   Updated: 2024/03/14 01:41:43 by ivan             ###   ########.fr       */
+/*   Updated: 2024/03/14 01:45:09 by ivan             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,9 @@
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	char	*ptr;
+
 	if (!s1 || !set)
-		return (NULL);
+		return ("");
 	ptr = (char *)malloc((ft_strlen(s1) + 1) * sizeof(char));
 	if (!ptr)
 		return (NULL);
@@ -26,8 +27,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 		{
 			if (*s1 != *set)
 			{
-				*ptr++ = *s1++;
+				*ptr = *s1;
 			}
+			ptr++;
+			s1++;
 		}
 	}
 	return (ptr);
