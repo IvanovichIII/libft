@@ -27,7 +27,7 @@ char	*ft_strjoin(const char *s1, const char *s2)
 	if (!ptr)
 		return (NULL);
 	or_ptr = ptr;
-	ft_strlcpy(ptr, s1, s1len);
-	ft_strlcpy(ptr + s1len, s2, s2len);
+	ft_strlcpy(ptr, s1, s1len + 1);
+	ft_strlcpy(ptr + s1len, s2, s2len + 1);
 	return (or_ptr);
 }
