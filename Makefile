@@ -30,15 +30,27 @@ SRC = ft_isalpha.c \
 		 ft_strtrim.c \
 		 ft_split.c \
 		 ft_itoa.c \
+		 ft_strmapi.c \
+		 ft_striteri.c \
 		 ft_putchar_fd.c \
 		 ft_putstr_fd.c \
 		 ft_putendl_fd.c \
 		 ft_putnbr_fd.c \
 
+SRCB = ft_lstnew.c \
+		ft_lstadd_front.c\
+		ft_lstsize.c \
+		ft_lstlast.c \
+
 OBJ = $(SRC:.c=.o)
+
+OBJB = $(SRCB:.c=.o)
 
 $(NAME): $(OBJ)
 	ar rcs $(NAME) $(OBJ)
+
+bonus: $(OBJ) $(OBJB)
+	ar rcs $(NAME) $(OBJ) $(OBJB)
 
 all: $(NAME)
 
@@ -46,10 +58,10 @@ all: $(NAME)
 	$(CC) $(CFLAGS) -o $@ -c $<
 
 clean:
-	rm -rf $(OBJ)
+	rm -rf $(OBJ) $(OBJB)
 
 fclean:
-	rm -rf $(NAME) $(OBJ) 
+	rm -rf $(NAME) $(OBJ) $(OBJB) 
 
 re: clean all
 

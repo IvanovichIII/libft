@@ -6,7 +6,7 @@
 /*   By: ivan <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 19:04:43 by ivan              #+#    #+#             */
-/*   Updated: 2024/03/15 01:14:00 by ivan             ###   ########.fr       */
+/*   Updated: 2024/03/15 17:03:00 by ivan             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,16 @@
 #include <unistd.h>
 #include <limits.h>
 
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}	t_list;
+
+//Funciones de libc
 int		ft_isalpha(int c);
-int		ft_isalnum(int c);
 int		ft_isdigit(int c);
+int		ft_isalnum(int c);
 int		ft_isascii(int c);
 int		ft_isprint(int c);
 int		ft_strlen(const char *str);
@@ -35,15 +42,23 @@ int		ft_strncmp(const char *s1, const char *s2, size_t c);
 void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *str1, const void *str2, size_t n);
 char	*ft_strnstr(const char *s1, const char *s2, size_t n);
+int		ft_atoi(const char *str);
 void	*ft_calloc(size_t number, size_t size);
 char	*ft_strdup(const char *string);
-int		ft_atoi(const char *str);
+//Funciones adicionales
 char	*ft_substr(const char *s, unsigned int start, size_t len);
 char	*ft_strjoin(const char *s1, const char *s2);
 char	*ft_strtrim(char const *s1, char const *set);
 char	**ft_split(char const *s, char c);
 char	*ft_itoa(int n);
+char	*ft_strmapi(const char *s, char (*f)(unsigned int, char));
+void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int nb, int fd);
+//Funciones bonus
+t_list	*ft_lstnew(void *content);
+void	*ft_lstadd(t_list **lst, t_list *new);
+int		ft_lstsize(t_list *lst);
+t_list	*ft_lstlast(t_list *lst);
